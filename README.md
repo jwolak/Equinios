@@ -56,10 +56,10 @@ Required tools:
 
 If Eclipse reports "Program make not found in PATH", you can set PATH inside Eclipse:
 
-1. Open Window -> Preferences -> C/C++ -> Build -> Environment.
+1. Open `Window -> Preferences -> C/C++ -> Build -> Environment`
 2. Add a variable:
-	- Name: PATH
-	- Value: C:\intelfpga_lite\18.1\nios2eds\bin\gnu\H-x86_64-mingw32\bin;C:\intelfpga_lite\18.1\nios2eds\bin\gnu\H-x86_64-mingw32\bin\utils;C:\intelfpga_lite\18.1\quartus\bin64\cygwin\bin;${PATH}
+	- Name: `PATH`
+	- Value: `C:\intelfpga_lite\18.1\nios2eds\bin\gnu\H-x86_64-mingw32\bin;C:\intelfpga_lite\18.1\nios2eds\bin\gnu\H-x86_64-mingw32\bin\utils;C:\intelfpga_lite\18.1\quartus\bin64\cygwin\bin;${PATH}`
 3. Apply and close Preferences.
 4. Restart Eclipse.
 
