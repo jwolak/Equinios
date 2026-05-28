@@ -43,6 +43,26 @@ Required tools:
 - `make`,
 - Nios II toolchain in PATH (default prefix: `nios2-elf-`).
 
+## Toolchain Requirements
+
+- Intel Quartus Prime Lite 18.1 (or compatible with this project)
+- Nios II EDS / Nios II SBT for Eclipse
+- Device support for MAX 10
+
+## Important
+
+- Build software from the Nios II Command Shell or Nios II Eclipse environment.
+- Running plain system shells without Nios II environment may fail due to missing tools such as `make`, `nios2-elf-gcc`, and `nios2-download` in PATH.
+
+If Eclipse reports "Program make not found in PATH", you can set PATH inside Eclipse:
+
+1. Open Window -> Preferences -> C/C++ -> Build -> Environment.
+2. Add a variable:
+	- Name: PATH
+	- Value: C:\intelfpga_lite\18.1\nios2eds\bin\gnu\H-x86_64-mingw32\bin;C:\intelfpga_lite\18.1\nios2eds\bin\gnu\H-x86_64-mingw32\bin\utils;C:\intelfpga_lite\18.1\quartus\bin64\cygwin\bin;${PATH}
+3. Apply and close Preferences.
+4. Restart Eclipse.
+
 Build the library:
 
 ```bash
@@ -68,6 +88,12 @@ The demo is located in:
 Run instructions and hardware requirements are described in:
 
 - `examples/NiosLoggerDemo/README.md`
+
+## Runtime Output Example
+
+Nios II console output captured while running the demo:
+
+![Nios II console output example](docs/images/nios-ii-console-output.png)
 
 ## License
 
