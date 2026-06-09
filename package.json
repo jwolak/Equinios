@@ -1,0 +1,10 @@
+{
+  "name": "equinios",
+  "version": "1.0.2",
+  "description": "Equinios lightweight logger for embedded systems NIOS-II compliant",
+  "main": "src/equinios.c",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "license": "BSD-2-Clause"
+}
